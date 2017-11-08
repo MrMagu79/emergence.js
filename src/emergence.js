@@ -247,7 +247,7 @@
       if (isVisible(elem)) {
 
         // Change the state of the attribute to 'visible'
-        elem.setAttribute('data-emergence', 'visible');
+        elem.dataset.emergence = 'visible';
 
         // Hack to repaint attribute in IE8
         elem.className = elem.className;
@@ -259,7 +259,7 @@
 
         // Else if element is hidden and reset
         // Change the state of the attribute to 'hidden'
-        elem.setAttribute('data-emergence', 'hidden');
+        elem.dataset.emergence = 'hidden';
 
         // Hack to repaint attribute in IE8
         elem.className = elem.className;
